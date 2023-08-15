@@ -1,4 +1,3 @@
-#ignore the audios folder:
-```
-git update-index --assume-unchanged audios/*
+#ignore the audios folder and all its contents
+audios/
 ```
