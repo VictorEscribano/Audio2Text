@@ -1,3 +1,4 @@
-audios\
-speech2text.py
+#ignore the audios folder:
+```
+git update-index --assume-unchanged audios/*
 ```
