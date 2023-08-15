@@ -9,11 +9,12 @@ import torch
 
 # Function to transcribe audio
 
+@st.cache(persist=True,allow_output_mutation=False,show_spinner=True,suppress_st_warning=True)
 def transcribe_audio(audio_path, model_size):
     
     # Transcription logic here
     model = whisper.load_model(model_size)
-    
+
     #check if device is cuda
     if model.device.type == "cuda":
         # print GPU Available. Using [tyoe and info of the gpu]
