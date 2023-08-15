@@ -8,8 +8,6 @@ from langcodes import Language
 import torch
 
 # Function to transcribe audio
-
-@st.cache(persist=True,allow_output_mutation=False,show_spinner=True,suppress_st_warning=True)
 def transcribe_audio(audio_path, model_size):
     
     # Transcription logic here
